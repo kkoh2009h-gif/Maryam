@@ -19,9 +19,9 @@ button{border:0;border-radius:999px;padding:13px 34px;background:linear-gradient
 <div class="caption" id="caption">هلو مريم 💗</div><button id="action" onclick="step()">هلو</button>
 </section></main>
 <script>
-const pics=["https://www.wallpaperuse.com/wallp/21-213936_talking-angela-wallpaper.jpg","https://games.kidzsearch.com/computer/thumbs/gamemntze-baby-angela-bathing-time-16080-img.png","https://3.bp.blogspot.com/-ch7uEaZO3y0/WcU69TyDnBI/AAAAAAAACnM/iWVdolEWxTAueFWMEi0wqWbGtwIZgGOMgCEwYBhgL/s1600/My%2BTalking%2BAngela%2BMod%2BApk-1.jpg"];
+const pics=["https://games.kidzsearch.com/computer/thumbs/gamemntze-baby-angela-bathing-time-16080-img.png"];
 const captions=['هلو مريم 💗','مريم عندي سؤال الحلوة 🥺','بس مستحية أسألج إياه 🙈','مريم يا أحلى ملاك 💖<br>ضحكتج تخلّي الدنيا أحلى<br>وأحب وجودج بحياتي هواي 💗'];
 const labels=['هلو','شنو هو؟','اسأليني','أحبج 💕'];let s=0;
-function step(){if(s<3){s++;document.getElementById('angelaPic').src=pics[s%pics.length];document.getElementById('caption').innerHTML=captions[s];document.getElementById('action').textContent=labels[s];if(s===3){document.getElementById('action').onclick=hearts;hearts()}}else hearts()}
+function step(){if(s<3){s++;document.getElementById('angelaPic').src=pics[0];document.getElementById('caption').innerHTML=captions[s];document.getElementById('action').textContent=labels[s];if(s===3){document.getElementById('action').onclick=hearts;hearts()}}else hearts()}
 function hearts(){for(let i=0;i<24;i++){let h=document.createElement('span');h.className='heart';h.textContent=['💗','💕','💖','✨'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.animationDuration=(4+Math.random()*4)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),8500)}}
 </script></body></html>
