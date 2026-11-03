@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffd8ef"><title>إلى مريم 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Cairo,system-ui,sans-serif;color:#713d70;overflow-x:hidden;background:radial-gradient(circle at 12% 12%,#ffc5e9 0,transparent 30%),radial-gradient(circle at 90% 20%,#d8c4ff 0,transparent 32%),radial-gradient(circle at 80% 90%,#bceeff 0,transparent 30%),linear-gradient(135deg,#fff0f8,#f1eaff 50%,#e8faff)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle,#fff 0 3px,transparent 4px),radial-gradient(circle,#ff8dc9a8 0 4px,transparent 5px);background-size:75px 90px,130px 150px}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:20px 14px;position:relative}.card{width:min(100%,560px);text-align:center;padding:25px 20px 30px;border:1px solid #fff9;background:#ffffffa8;backdrop-filter:blur(10px);border-radius:32px;box-shadow:0 18px 55px #d77bb82b;position:relative;z-index:1}
+.kitty{width:min(62vw,270px);height:auto;display:block;margin:0 auto 2px;animation:bob 3s ease-in-out infinite;filter:drop-shadow(0 12px 14px #aa7acb40)}
+h1{font-size:clamp(29px,7vw,43px);margin:6px 0;color:#e653a4;font-weight:900}p{font-size:18px;line-height:1.9;margin:8px 0 18px}
+button{font-family:inherit;border:0;border-radius:999px;padding:13px 30px;font-size:19px;font-weight:900;cursor:pointer;color:white;background:linear-gradient(120deg,#ff79bd,#bd7af2 55%,#77c9f5);box-shadow:0 8px 22px #c17ae545;transition:transform .2s}
+button:hover{transform:translateY(-3px)}button:active{transform:scale(.97)}
+.hidden{display:none}.message{animation:pop .6s cubic-bezier(.2,1.5,.5,1) both}.final{font-size:clamp(20px,5vw,26px);font-weight:800;line-height:2;color:#d9449b}.name{font-size:clamp(28px,7vw,38px);color:#9a5cdb;text-shadow:0 2px white}
+.hint{font-size:13px;color:#b77caa;margin-top:18px}.heart{position:fixed;bottom:-40px;z-index:0;animation:float 7s linear forwards;pointer-events:none}
+.bgkitty{position:fixed;width:min(34vw,230px);opacity:.25;z-index:0;pointer-events:none}.left{left:-35px;top:7%;transform:rotate(-12deg)}.right{right:-35px;bottom:3%;transform:rotate(12deg)}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(2deg)}}@keyframes pop{from{opacity:0;transform:scale(.7) translateY(12px)}to{opacity:1;transform:scale(1)}}@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:420px){.card{padding:20px 14px}.kitty{width:min(68vw,250px)}.bgkitty{width:42vw}}
+</style></head><body>
+<!-- Cute baby white kitty inspired by Baby Angela -->
+<svg class="bgkitty left" viewBox="0 0 220 250" aria-hidden="true"><use href="#kittyArt"/></svg><svg class="bgkitty right" viewBox="0 0 220 250" aria-hidden="true"><use href="#kittyArt"/></svg>
+<svg width="0" height="0" style="position:absolute"><defs><g id="kittyArt">
+<path d="M48 82 30 17Q28 4 44 17L83 52Q110 40 137 52L176 17Q192 4 190 17L172 82" fill="#fff" stroke="#d5b9e8" stroke-width="4"/>
+<ellipse cx="110" cy="117" rx="72" ry="77" fill="#fff" stroke="#d5b9e8" stroke-width="4"/>
+<path d="M43 74 37 27 76 58M177 74 183 27 144 58" fill="#ffb9d9"/>
+<ellipse cx="83" cy="118" rx="14" ry="20" fill="#8bd7f8"/><ellipse cx="137" cy="118" rx="14" ry="20" fill="#8bd7f8"/><ellipse cx="85" cy="120" rx="6" ry="11" fill="#55426e"/><ellipse cx="139" cy="120" rx="6" ry="11" fill="#55426e"/><circle cx="89" cy="111" r="4" fill="#fff"/><circle cx="143" cy="111" r="4" fill="#fff"/>
+<path d="M103 139q7 8 14 0" fill="none" stroke="#c87b9f" stroke-width="4" stroke-linecap="round"/><ellipse cx="64" cy="140" rx="13" ry="7" fill="#ffb3d2"/><ellipse cx="156" cy="140" rx="13" ry="7" fill="#ffb3d2"/>
+<path d="M68 185q42-24 84 0l18 48H50Z" fill="#f5a4d0" stroke="#d77bb6" stroke-width="4"/><path d="M110 193l8 12 14 2-10 10 2 14-14-7-14 7 2-14-10-10 14-2Z" fill="#fff"/>
+</g></defs></svg>
+<main class="wrap"><section class="card" aria-live="polite">
+<svg class="kitty" viewBox="0 0 220 250" role="img" aria-label="قطة صغيرة لطيفة مستوحاة من أنجيلا"><use href="#kittyArt"/></svg>
+<div id="stage1" class="message"><h1>هلو مريم الحلوة 💗</h1><p>عندي سؤال صغير إلج…</p><button onclick="next(2)">اني؟</button></div>
+<div id="stage2" class="hidden message"><h1>إي انتِ 🥹</h1><p>إي والله انتِ، يا أحلى بنية بالدنيا!</p><button onclick="next(3)">استحييي 🙈</button></div>
+<div id="stage3" class="hidden message"><div class="final"><div class="name">مريم يا أحلى ملاك 💖</div>أحلى بنية وأجمل ضحكة<br>تنور أيامي وعيوني<br>يا وردة بوسط گلبي<br>أحبج هواي ❤️</div><p>وجودج يخلي كلشي أحلى ✨</p><button onclick="hearts()">اضغطي هنا حتى تطير قلوب 💞</button></div>
+<div class="hint">رسالة صغيرة من القلب 💌</div></section></main>
+<script>function next(n){document.querySelectorAll('[id^="stage"]').forEach(e=>e.classList.add('hidden'));document.getElementById('stage'+n).classList.remove('hidden');if(n===3)hearts()}function hearts(){for(let i=0;i<28;i++){let h=document.createElement('span');h.className='heart';h.textContent=['💗','💕','💖','💜','✨'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*25)+'px';h.style.animationDuration=(4+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),9500)}}</script></body></html>
